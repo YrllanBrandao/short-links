@@ -12,6 +12,11 @@
                 'controller' => 'indexController',
                 'action' => 'index'
             ];
+            $routes['short'] = [
+                'route' => '/short-url',
+                'controller' => 'indexController',
+                'action' => 'shortLink'
+            ];
             
             $this -> routes = $routes;
         }
