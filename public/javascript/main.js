@@ -31,7 +31,7 @@ async function shortLink(link){
             },
             body: JSON.stringify(requestBody)
         })
-        
+
         const responseData = await response.json();
         outputArea.classList.remove("d-none");
         outputLink.value = responseData.shortened_link

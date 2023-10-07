@@ -16,14 +16,16 @@
         <input type="text" name="long-link" id="long-link" class="form-control" placeholder="Cole sua Url aqui">
         <button type="submit" class="btn btn-warning text-light" id="button-short">Encutar link</button>
 
-        <div class="container-fluid  d-none p-0 d-flex gap-1" id="shortened-link-area">
+        
+    </form>
+    <div class="container-fluid  d-none p-0 d-flex gap-1" id="shortened-link-area">
           
             <input type="text"  id="shortened-link" class="form-control border-primary" readonly>
-            <button class="btn btn-primary">Copiar</button>
+            <button class="btn btn-primary" id="button-copy-url">Copiar</button>
         </div>
-    </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./javascript/main.js"></script>
+    <script src="./javascript/copyUrl.js"></script>
   </body>
 </html>
