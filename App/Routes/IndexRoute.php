@@ -2,7 +2,7 @@
     namespace App\Routes;
 
     use App\Routes\AbstractRoute;
-
+    
     class IndexRoute extends AbstractRoute{
         private $routes;
 
