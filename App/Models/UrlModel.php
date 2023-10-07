@@ -73,4 +73,29 @@
             }
             return true;
         }
+
+        public function getSavedPaths(){
+            $conn = new Connection;
+
+            $connection = $conn -> getConnection();
+
+            $sql = '
+                select path, longUrl from  savedUrls 
+            ';
+            $statement = $connection -> prepare($sql);
+
+
+            $statement -> execute();
+
+            $result = $statement -> fetchAll(PDO::FETCH_ASSOC);
+
+            if(empty($result)){
+                return [
+                    'route' => '/404',
+                    'controller' => 'indexController',
+                    'action' => 'notFound'
+                ];
+            }
+            return $result;
+        }
     }

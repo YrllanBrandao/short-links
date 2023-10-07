@@ -44,7 +44,14 @@
            }
         }
 
+        public function redirectTo($destination){
+            $destination = str_replace('"', '', $destination);
 
+            header("Location: {$destination}");
+        }
+        public function notFound(){
+            echo 'Url Inválida';
+        }
 
         
     }
