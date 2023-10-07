@@ -16,9 +16,9 @@
         <input type="text" name="long-link" id="long-link" class="form-control" placeholder="Cole sua Url aqui">
         <button type="submit" class="btn btn-warning text-light" id="button-short">Encutar link</button>
 
-        <div class="container-fluid  p-0 d-flex gap-1" id="link-shorted-area">
+        <div class="container-fluid  d-none p-0 d-flex gap-1" id="shortened-link-area">
           
-            <input type="text"  id="shorted-link" class="form-control border-primary" readonly>
+            <input type="text"  id="shortened-link" class="form-control border-primary" readonly>
             <button class="btn btn-primary">Copiar</button>
         </div>
     </form>

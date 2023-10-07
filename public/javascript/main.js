@@ -1,6 +1,7 @@
 const form = document.getElementById("form-link");
 const inputLink = document.getElementById("long-link");
-const outputLink = document.getElementById("shorted-link");
+const outputLink = document.getElementById("shortened-link");
+const outputArea = document.getElementById("shortened-link-area");
 const buttonShort = document.getElementById("button-short");
 
 
@@ -30,13 +31,18 @@ async function shortLink(link){
             },
             body: JSON.stringify(requestBody)
         })
+        
         const responseData = await response.json();
-
-        outputLink.value = responseData.shorted_link
+        outputArea.classList.remove("d-none");
+        outputLink.value = responseData.shortened_link
         buttonShort.innerHTML = "Encurtar link";
         buttonShort.disabled = false;
+        inputLink.readOnly = false;
     }
     catch(error){
         alert("Ocorreu um erro interno, tente novamente mais tarde");
+        buttonShort.innerHTML = "Encurtar link";
+        buttonShort.disabled = false;
+        inputLink.readOnly = false;
     }
 }

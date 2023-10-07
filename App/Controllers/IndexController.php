@@ -26,7 +26,7 @@
             http_response_code(200);
             
             $response_data = [
-                'shorted_link' => $longLink
+                'shortened_link' => $longLink
             ];
             $encoded_response = json_encode($response_data);
         
