@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#form-link{
+    width: 40vw;
+}
+
+#img-main{
+    width: 200px;
+    aspect-ratio: 1 / 1;
+}
+
+.container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
