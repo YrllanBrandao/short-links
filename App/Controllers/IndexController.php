@@ -10,12 +10,10 @@
         public function shortLink(){
             $json_data = file_get_contents('php://input');
             
-            // Decodifica o JSON para um array associativo
             $data = json_decode($json_data, true);
         
             if ($data === null) {
-                // Erro ao decodificar JSON
-                http_response_code(400); // Status 400 Bad Request
+                http_response_code(400);
                 $error_message = array("erro" => "Formato JSON inválido");
                 echo json_encode($error_message);
                 return;
