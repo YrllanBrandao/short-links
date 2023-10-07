@@ -1,0 +1,16 @@
+{
+    "name": "yrllan/short-links",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "MF\\": "vendor/MF/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yrllanbrandao",
+            "email": "yrllanbrandao@outlook.com"
+        }
+    ],
+    "require": {}
+}
