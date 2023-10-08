@@ -19,7 +19,7 @@ form.addEventListener("submit", (e)=>{
 
 async function shortLink(link){
     const requestBody = {
-        'longLink': link
+        'longLink': checkIfHasProtocol(link)
     }
     const url =  "http://localhost:8080/short-url";
    
@@ -45,4 +45,22 @@ async function shortLink(link){
         buttonShort.disabled = false;
         inputLink.readOnly = false;
     }
+}
+
+
+function checkIfHasProtocol(link){
+
+    const http = /^http/g;
+    const https = /^https/g;
+
+    const hasHttps = RegExp(https);
+    const hasHttp = RegExp(http);
+    if(hasHttps.test(link))
+    {
+        return link;
+    }
+    if(hasHttp.test(link)){
+        return link
+    }
+    return 'https://' + link;
 }

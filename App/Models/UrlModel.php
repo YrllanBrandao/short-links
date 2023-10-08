@@ -19,7 +19,7 @@
         }
         public function genShortenedUrl($long_url){
 
-            $base_url = 'http://localhost/';
+            $base_url = 'http://localhost:8080/';
             $generatedPath =  $this -> genPath();
             $shortened_url = $base_url . $generatedPath;
             $response = [

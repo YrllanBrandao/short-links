@@ -31,7 +31,6 @@
                 ];
             }
 
-        
             $this -> routes = $routes;
         }
 
