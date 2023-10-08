@@ -1,6 +1,11 @@
 # short-links
 ![encurta-link rf gd_](https://github.com/YrllanBrandao/short-links/assets/77467410/4ee87992-34d8-40df-b91f-79a5d6cca01d)
 
+▶️ **IMPORTANTE:** Este projeto utiliza o meu mini sistema de roteamento com depêndencia própria, [LINK AQUI](https://github.com/YrllanBrandao/php-router)
+- Após baixar renomeie para "MF"
+- Mova para dentro de vendor
+
+<hr/>
 Trata-se de um encurtador de Urls, que assim como o nome sugere, transforma Urls Longas em Urls curtas de forma fácil, também disponibiliza um endpoint para encurtamento de Url.
 
 ## encurtar uma Url através da API
