@@ -24,6 +24,7 @@ Content-Type: application/json
 #### Corpo da Requisição
 
 | campo | valor esperado |
+|-|-|
 | longLink | uma url longa junto com o protocolo |
 
 
