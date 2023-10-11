@@ -33,6 +33,6 @@ Content-Type: application/json
 Se a requisição for bem succedidada você receberá algo como:
 ```
 {
-    "shortened_link": "http://{{shortlinks_main}}/gcyw"
+    "shortened_link": "http://[https://encurta-link.rf.gd/zzzz"
 }
 ```
